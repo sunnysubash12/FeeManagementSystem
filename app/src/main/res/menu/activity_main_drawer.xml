@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_students"
+            android:icon="@drawable/ic_st"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_add_students"
+            android:icon="@drawable/ic_ad"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_add_fee"
+            android:icon="@drawable/ic_fee"
+            android:title="Add Fee Details"></item>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_log"
+            android:title="@string/menu_slideshow" />
+    </group>
+</menu>

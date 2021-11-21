@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        app:cardElevation="8dp"
+        card_view:cardCornerRadius="30dp"
+        android:id="@+id/cd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/card"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Studnt Id:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+
+                    android:layout_marginLeft="43dp"
+                    android:id="@+id/myid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/myfulname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_marginLeft="36dp"
+
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/myemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66dp"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38.5dp"
+                android:textColor="@color/black"></TextView>
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardb"
+                    android:textColor="@color/white"
+                    android:text="update"
+                    android:id="@+id/upstu"></androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardb"
+                    android:textColor="@color/white"
+                    android:text="Delete"
+                    android:id="@+id/delstu"></androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

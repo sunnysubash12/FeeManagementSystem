@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    android:orientation="vertical"
+    tools:context=".SecQues">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/val"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/jamel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/quest"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Add Security Question"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upquest"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:text="Update Security Question"
+            android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+</LinearLayout>

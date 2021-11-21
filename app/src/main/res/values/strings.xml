@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FMS</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Admin</string>
+    <string name="nav_header_subtitle">Admin@aptech.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Students</string>
+    <string name="menu_gallery">Add Students</string>
+    <string name="menu_slideshow">Logout</string>
+
+</resources>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    android:orientation="vertical"
+    tools:context=".Feedetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/o"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bacground">
+
+        <ImageView
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_below="@+id/y"
+        android:layout_marginTop="-4dp"
+        android:id="@+id/framlytt"
+        android:layout_width="match_parent"
+        android:layout_height="9dp">
+        <ProgressBar
+            android:visibility="gone"
+            android:progressDrawable="@drawable/custom_progress_bg"
+            android:id="@+id/prog"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="2dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice number:"></TextView>
+
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/billno"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:background="@color/bacground"
+            android:spinnerMode="dialog"></Spinner>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/card"
+            android:gravity="center"
+            android:id="@+id/hu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tution Fee:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/vtf"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/black"></TextView>
+
+
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="40dp"
+                    android:textSize="15dp"
+                    android:id="@+id/A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upa"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exam Fee:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/vef"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="46dp"
+                    android:textColor="@color/black"></TextView>
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="46dp"
+                    android:textSize="15dp"
+                    android:id="@+id/B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upb"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports Fee:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/vsf"
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:textColor="@color/black"></TextView>
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="39dp"
+                    android:textSize="15dp"
+                    android:id="@+id/C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upc"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IT Fee:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/vit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="68.5dp"
+                    android:textColor="@color/black"></TextView>
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="68.5dp"
+                    android:textSize="15dp"
+                    android:id="@+id/D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upd"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Books Cost:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/vbf"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:textColor="@color/black"></TextView>
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="36dp"
+                    android:textSize="15dp"
+                    android:id="@+id/E"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upe"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stationary Cost:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/ssc"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:textColor="@color/black"></TextView>
+                <EditText
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginLeft="9dp"
+                    android:textSize="15dp"
+                    android:id="@+id/F"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/upf"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/sdd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:textColor="@color/black"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/ss"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66.5dp"
+                    android:textColor="@color/black"></TextView>
+                <Spinner
+                    android:visibility="gone"
+                    android:layout_marginLeft="66.5dp"
+                    android:textSize="10dp"
+                    android:id="@+id/H"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <ImageButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/uph"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"></ImageButton>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardb"
+                    android:textColor="@color/white"
+                    android:text="update"
+                    android:id="@+id/upfee"></androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardb"
+                    android:textColor="@color/white"
+                    android:text="Delete"
+                    android:id="@+id/delfee"></androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:text="Get Fee Details"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/y"
+        android:visibility="gone"></EditText>
+
+    <EditText
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/x"></EditText>
+
+
+
+</LinearLayout>

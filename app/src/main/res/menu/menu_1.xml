@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<!--    <item android:id="@+id/Valida" android:title="Security Question"></item>-->
+    <item android:id="@+id/profile" android:title="Change Password"/>
+    <item android:icon="@drawable/a" android:id="@+id/logout" android:title="Log Out"/>
+</menu>
