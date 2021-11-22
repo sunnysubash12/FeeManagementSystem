@@ -4,5 +4,5 @@
 
 - 👋 My name is Sunny Subash
 - 👀 I’m interested in Backend programming
-- 🌱 I’m currently doing Bachelors in Computer Science at Middlesex university londo
+- 🌱 I’m currently doing Bachelors in Computer Science at Middlesex university london
 - 📫 How to reach me Sunnylalwani650@gmail.com
